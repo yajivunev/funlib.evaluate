@@ -32,5 +32,11 @@ setup(
                 extra_compile_args=['-O3', '-std=c++11'],
                 include_dirs=[np.get_include()],
                 language='c++')
-        ])
+        ]),
+        install_requires=[
+            "cython",
+            "numpy",
+            "scipy",
+            "networkx"
+        ]
 )
